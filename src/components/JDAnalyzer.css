@@ -1,0 +1,243 @@
+.jd-analyzer {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.analyzer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.analyzer-header h3 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--black);
+  margin: 0;
+}
+
+.pro-badge, .free-badge {
+  background: linear-gradient(135deg, #10b981, #059669);
+  color: var(--white);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.jd-input-section {
+  margin-bottom: 1.5rem;
+}
+
+.jd-input-section label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--dark-gray);
+  margin-bottom: 0.5rem;
+}
+
+.jd-input-section textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid var(--light-gray);
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  resize: vertical;
+  min-height: 120px;
+  transition: var(--transition);
+}
+
+.jd-input-section textarea:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+}
+
+.btn-analyze {
+  width: 100%;
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  background: var(--primary-blue);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-analyze:hover:not(:disabled) {
+  background: var(--primary-blue-dark);
+}
+
+.btn-analyze:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.keywords-section {
+  margin-bottom: 1.5rem;
+}
+
+.keywords-section h4 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--dark-gray);
+  margin-bottom: 0.75rem;
+}
+
+.keywords-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.keyword-tag {
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+  color: var(--primary-blue);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.ats-score-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.score-circle {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  flex-shrink: 0;
+}
+
+.score-circle svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.score-circle .score-value {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.score-number {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--black);
+}
+
+.score-label {
+  display: block;
+  font-size: 0.625rem;
+  color: var(--gray);
+  margin-top: 0.125rem;
+}
+
+.score-tips {
+  flex: 1;
+}
+
+.score-tips h4 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--dark-gray);
+  margin-bottom: 0.5rem;
+}
+
+.score-tips ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.score-tips li {
+  font-size: 0.75rem;
+  color: var(--dark-gray);
+  padding: 0.25rem 0;
+}
+
+.score-tips li::before {
+  content: '•';
+  margin-right: 0.5rem;
+  color: var(--primary-blue);
+}
+
+.success-tip {
+  color: var(--success) !important;
+}
+
+.success-tip::before {
+  content: '✓' !important;
+  color: var(--success) !important;
+}
+
+.upgrade-prompt {
+  background: linear-gradient(135deg, #fef3c7, #fde68a);
+  border: 2px dashed #f59e0b;
+  border-radius: var(--radius);
+  padding: 1rem;
+  text-align: center;
+}
+
+.upgrade-prompt p {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--warning);
+  margin-bottom: 0.5rem;
+}
+
+.upgrade-prompt ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+  text-align: left;
+}
+
+.upgrade-prompt li {
+  font-size: 0.75rem;
+  color: var(--dark-gray);
+  padding: 0.25rem 0;
+}
+
+.btn-upgrade {
+  width: 100%;
+  padding: 0.75rem;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: var(--white);
+  border: none;
+  border-radius: var(--radius);
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-upgrade:hover {
+  background: linear-gradient(135deg, #d97706, #b45309);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .ats-score-section {
+    flex-direction: column;
+  text-align: center;
+  }
+  
+  .score-tips {
+    text-align: left;
+  }
+}

@@ -1,0 +1,83 @@
+.pricing-free {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.pricing-header {
+  margin-bottom: 1.5rem;
+}
+
+.free-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.pricing-header h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 0.5rem;
+}
+
+.pricing-header p {
+  font-size: 0.875rem;
+  color: var(--gray);
+}
+
+.features-list {
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+  border-radius: var(--radius);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.features-list h4 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--black);
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.features-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+}
+
+.features-list li {
+  font-size: 0.75rem;
+  color: var(--dark-gray);
+  padding: 0.25rem 0;
+}
+
+.no-payment-message {
+  padding: 1rem;
+  background: var(--off-white);
+  border-radius: var(--radius);
+}
+
+.no-payment-message p {
+  font-size: 0.875rem;
+  color: var(--dark-gray);
+}
+
+.thank-you {
+  font-size: 1rem !important;
+  font-weight: 600;
+  color: var(--success) !important;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 480px) {
+  .features-list ul {
+    grid-template-columns: 1fr;
+  }
+}
