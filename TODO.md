@@ -14,4 +14,8 @@
 - ✅ User Account
 - ✅ 100% FREE - No Payment Required!
 
+## Notes
+- Export formats and ATS scoring logic are currently client-side (no server required).
+
+
 ### Running at: http://localhost:5173/
