@@ -297,7 +297,7 @@ If you like this project:
 
 * Star the repository
 * Share feedback
-* Contribute improvements
+* Contribute necessarities\
 
 ---
 
